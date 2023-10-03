@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_Screen Dither
-  m_Shader: {fileID: -6465566751694194690, guid: e07b13a9fef42104f9caba7b393d8e6d,
+  m_Name: Shader Graphs_Fresnel
+  m_Shader: {fileID: -6465566751694194690, guid: a0856dd86a9b35a419d5d41ed5bba869,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -24,18 +24,6 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - _Albedo:
-        m_Texture: {fileID: 2800000, guid: 6c7ab14e1eb1bd34fb6d44c2d1e27ba9, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Metallic:
-        m_Texture: {fileID: 2800000, guid: 2f317809159d4da40b68932ed63fe870, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Normal:
-        m_Texture: {fileID: 2800000, guid: 6c7ab14e1eb1bd34fb6d44c2d1e27ba9, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -50,15 +38,11 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Offset: 0
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Range: 1
-    m_Colors:
-    - _Colour: {r: 1, g: 1, b: 1, a: 0}
-    - _Tiling_Offset: {r: 3, g: 3, b: 0, a: 0}
+    m_Colors: []
   m_BuildTextureStacks: []
---- !u!114 &2031450509342580478
+--- !u!114 &7926319309675553165
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
