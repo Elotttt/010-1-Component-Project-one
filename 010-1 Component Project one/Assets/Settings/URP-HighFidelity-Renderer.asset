@@ -22,14 +22,14 @@ MonoBehaviour:
         serializedVersion: 2
         m_Bits: 8
       PassNames: []
-    overrideMaterial: {fileID: 2100000, guid: 0f878ae2cc66b264ab182ad57706e5da, type: 2}
+    overrideMaterial: {fileID: 2100000, guid: 776c9dd0e1a40474e9d94f632fbb1b33, type: 2}
     overrideMaterialPassIndex: 0
     overrideShader: {fileID: 0}
     overrideShaderPassIndex: 0
     overrideMode: 1
     overrideDepthState: 1
     depthCompareFunction: 5
-    enableWrite: 1
+    enableWrite: 0
     stencilSettings:
       overrideStencilState: 0
       stencilReference: 0
@@ -198,21 +198,21 @@ MonoBehaviour:
   m_Active: 1
   settings:
     passTag: PlayerVisible
-    Event: 200
+    Event: 300
     filterSettings:
       RenderQueueType: 0
       LayerMask:
         serializedVersion: 2
         m_Bits: 8
       PassNames: []
-    overrideMaterial: {fileID: 2100000, guid: cf450cdd50e2ced4ebec776bc293a1b7, type: 2}
+    overrideMaterial: {fileID: 2100000, guid: 6b4f82fe42265254f857af7e35c12c9b, type: 2}
     overrideMaterialPassIndex: 0
     overrideShader: {fileID: 0}
     overrideShaderPassIndex: 0
     overrideMode: 1
-    overrideDepthState: 1
-    depthCompareFunction: 2
-    enableWrite: 1
+    overrideDepthState: 0
+    depthCompareFunction: 5
+    enableWrite: 0
     stencilSettings:
       overrideStencilState: 0
       stencilReference: 0

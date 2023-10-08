@@ -17,6 +17,13 @@ public class PlayerMovement : MonoBehaviour
 
     bool moving;
 
+    public GameObject characterModel;
+    public Animator animator;
+
+    void Awake()
+    {
+        animator = GetComponent<Animator>();
+    }
     private void Update()
     {
         if (moving)
@@ -39,6 +46,8 @@ public class PlayerMovement : MonoBehaviour
                 targetPosition = transform.position + Vector3.forward;
                 startPosition = transform.position;
                 moving = true;
+                characterModel.transform.rotation = Quaternion.Euler(0, 0, 0);
+
             }
         }
         else if (Input.GetKeyDown(KeyCode.A))
@@ -48,6 +57,8 @@ public class PlayerMovement : MonoBehaviour
                 targetPosition = transform.position + Vector3.left;
                 startPosition = transform.position;
                 moving = true;
+                characterModel.transform.rotation = Quaternion.Euler(0, -90, 0);
+
             }
         }
         else if (Input.GetKeyDown(KeyCode.S))
@@ -57,6 +68,7 @@ public class PlayerMovement : MonoBehaviour
                 targetPosition = transform.position + Vector3.back;
                 startPosition = transform.position;
                 moving = true;
+                characterModel.transform.rotation = Quaternion.Euler(0, 180, 0);
             }
         }
         else if (Input.GetKeyDown(KeyCode.D))
@@ -66,8 +78,17 @@ public class PlayerMovement : MonoBehaviour
                 targetPosition = transform.position + Vector3.right;
                 startPosition = transform.position;
                 moving = true;
+                characterModel.transform.rotation = Quaternion.Euler(0, 90, 0);
 
             }
+        }
+        if (moving)
+        {
+            animator.SetBool("isRunning", true);
+        }
+        else
+        {
+            animator.SetBool("isRunning", false);
         }
     }
 
