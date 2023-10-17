@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33549864995463860}
   - component: {fileID: 23466447114620078}
   m_Layer: 0
-  m_Name: SM_Tile_Cube_Column_01
+  m_Name: SM_Tile_Cube_Column_01 - Copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
