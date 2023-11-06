@@ -98,10 +98,12 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Physics.Raycast(transform.position + Vector3.up * rayOffsetY + Vector3.right * rayOffsetX, direction, rayLength))
             {
+                Debug.Log("Can't move forward");
                 return false;
             }
-            if(Physics.Raycast(transform.position + Vector3.up * rayOffsetY - Vector3.right * rayOffsetX, direction, rayLength))
+            if (Physics.Raycast(transform.position + Vector3.up * rayOffsetY - Vector3.right * rayOffsetX, direction, rayLength))
             {
+                Debug.Log("Can't move backwards");
                 return false;
             }
         }
@@ -109,10 +111,12 @@ public class PlayerMovement : MonoBehaviour
         {
             if (Physics.Raycast(transform.position + Vector3.up * rayOffsetY + Vector3.forward * rayOffsetZ, direction, rayLength))
             {
+                Debug.Log("Can't move left");
                 return false;
             }
             if (Physics.Raycast(transform.position + Vector3.up * rayOffsetY - Vector3.forward * rayOffsetZ, direction, rayLength))
             {
+                Debug.Log("Can't move right");
                 return false;
             }
         }
