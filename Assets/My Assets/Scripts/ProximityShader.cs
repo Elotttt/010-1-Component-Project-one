@@ -26,6 +26,7 @@ public class ProximityShader : MonoBehaviour
 
         if (other.tag == "Player")
         {
+            GetComponent<Renderer>().material.SetFloat("_EdgeWidth", 0.1f);
             StartCoroutine(DissolveOut(1));
         }
     }
