@@ -15,7 +15,6 @@ public class ProximityShader : MonoBehaviour
     void Update()
     {
         float dist = Mathf.Clamp(Vector3.Distance(player.transform.position, transform.position), 1, 10);
-        //Debug.Log(dist);
         
         GetComponent<Renderer>().material.SetFloat("_Distance", dist);
     }
